@@ -12,7 +12,7 @@ struct node *create(struct node *head)
 {
 	struct node *newnode,*temp;
 	int n;
-	printf("enter how many node you want to create: ");
+	printf("Enter how many node you want to create: ");
     scanf("%d",&n);
 	if(n<1)
 	{
@@ -36,8 +36,8 @@ struct node *create(struct node *head)
 		newnode=(struct node *)malloc(sizeof(struct node));
         	if(newnode==NULL)
         	{
-                	printf("memory allocation failed");
-                	return NULL;
+                printf("memory allocation failed");
+                return NULL;
         	}
 		temp->next=newnode;
 		newnode->prev=temp;
@@ -75,11 +75,11 @@ void insert_beg()
 	{
 		printf("list is empty\n");
 		newnode=(struct node *)malloc(sizeof(struct node));
-                if(newnode==NULL)
-                {
-                        printf("memory allocation failed");
-                        return ;
-                }
+            if(newnode==NULL)
+            {
+                printf("memory allocation failed");
+                return ;
+            }
 		head=newnode;
 		tail=newnode;
 		printf("enter data to the 1st node: ");
@@ -93,8 +93,8 @@ void insert_beg()
 		newnode=(struct node *)malloc(sizeof(struct node));
                 if(newnode==NULL)
                 {
-                        printf("memory allocation failed");
-                        return ;
+                    printf("memory allocation failed");
+                    return ;
 		}
 		head->prev=newnode;
 		printf("enter data to insert at begning: ");
@@ -115,8 +115,8 @@ void insert_end()
                 newnode=(struct node *)malloc(sizeof(struct node));
                 if(newnode==NULL)
                 {
-                        printf("memory allocation failed");
-                        return ;
+                    printf("memory allocation failed");
+                    return ;
                 }
                 head=newnode;
                 tail=newnode;
@@ -131,8 +131,8 @@ void insert_end()
 		newnode=(struct node *)malloc(sizeof(struct node));
                 if(newnode==NULL)
                 {
-                        printf("memory allocation failed");
-                        return ;
+                    printf("memory allocation failed");
+                    return ;
                 }
 		tail->next=newnode;
 		newnode->prev=tail;

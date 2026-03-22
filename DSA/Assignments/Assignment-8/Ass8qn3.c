@@ -86,8 +86,7 @@ int main() {
             case 4: traverse();
 		    break;
             case 5: exit(0);
-            default:wq
-		    :
+            default:
 		    printf("Invalid choice\n");
         }
     }

@@ -91,7 +91,7 @@ void create() {
                 temp = temp->next;
             temp->next = newnode;
         }
-    }
+    }   
 }
 void display() {
     struct node *temp = head;

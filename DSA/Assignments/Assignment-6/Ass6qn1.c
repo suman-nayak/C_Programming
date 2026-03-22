@@ -52,8 +52,7 @@ void main(){
                 }
                 printf("\n\n--------------------------------------------------------------\n\n");
         }
-}	
-
+}
 
 struct node* create_node(){
 	struct node *newnode;
@@ -67,7 +66,6 @@ struct node* create_node(){
 	newnode->next=NULL;
 	return newnode;
 }
-
 
 void create(){
         struct node* newnode=NULL,*temp=NULL;
@@ -112,18 +110,17 @@ void traverse(){
 
 void insert_beg(){
 
-
      struct node *newnode,*temp=head;
      newnode=create_node();
      newnode->next=head;
      if(head==NULL){
-	     head=newnode;
-	     newnode->next=head;
-	     return;
+	head=newnode;
+	newnode->next=head;
+	return;
      }
      temp=head->next;
      while(temp->next!=head){
-	     temp=temp->next;
+	temp=temp->next;
      }
      temp->next=newnode;
      head=newnode;
